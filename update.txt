@@ -1,0 +1,40 @@
+Update aft reboot
+
+sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo reboot
+
+
+
+
+cd ~/EagleEye
+
+source venv/bin/activate
+
+pip install setuptools
+
+python eagle_eye.py -i blurry_image.jpg
+
+deactivate
+
+python3.12 -m venv venv                                                  
+source venv/bin/activate
+
+sudo apt update
+sudo apt install -y python3-full python3-venv
+
+python eagle_eye.py -i PHDCw.jpg
+
+python eagle_eye.py -i blurry_image2.jpg
+
+pip install exifread
+
+python eagle_eye.py -i blurry_image2.jpg
+
+
+
+
+
+
+
+
+CUDA_VISIBLE_DEVICES="" python eagle_eye.py -i PHDCw.jpg
+
